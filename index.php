@@ -1,13 +1,15 @@
-
+<?php
+    require 'config/Config.php';
+    $usuario = new Usuario();    
+    if($usuario->autenticar()){                            
+?>
 <html>
     <head>        
         <meta charset="UTF-8">
-        <title></title>        
+        <title>Productos</title>        
     </head>
-    <body>
-        Hola
-        <?php
-        // put your code here
-        ?>
+    <body>        
+        <h1>Hola</h1>
     </body>
 </html>
+<?php } else {include 'vistas/formLogin.php';} ?>
