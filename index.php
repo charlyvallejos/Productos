@@ -9,7 +9,7 @@
         <title>Productos</title>        
     </head>
     <body>        
-        <h1>Hola</h1>
+        <h1>Bienvenido mother fucker</h1>
     </body>
 </html>
 <?php } else {include 'vistas/formLogin.php';} ?>

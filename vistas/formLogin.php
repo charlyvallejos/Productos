@@ -149,7 +149,7 @@
     <div>
         <p ng-model="msj" style="color:black">{{msj}}</p>
     </div>
-    <form id="formLogin" method="post" novalidate name="formLogin" ng-submit="submit(formLogin.$valid,formLogin)">
+    <form id="formLogin" method="post" novalidate name="formLogin" ng-submit="submit()">
         <div class="group">
             <div ng-messages="Login.Usuario_Login.$error" ng-messages-include="vistas/messages.html"></div>
             <input type="text" class="used"  name="Usuario_Login" ng-model="Login.Usuario_Login" required><span class="highlight"></span><span class="bar"></span>
