@@ -42,6 +42,11 @@ class Usuario{
         return json_encode($ok);
     }
     
+    public function logout(){
+        session_unset();
+        session_destroy();
+    }
+    
     
 }
 

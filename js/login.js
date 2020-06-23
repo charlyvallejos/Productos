@@ -30,6 +30,25 @@ var app = angular.module('appLogin',['ngMessages'])
                     console.log(resp);
                 });
             };
+            
+            $scope.logout = function(){
+                var link = "";
+                link = apiURL + '?logout';
+                
+                $http({
+                   method:'GET',
+                   url: link
+                })
+                .then(function(resp){
+                    $window.location.reload();
+                })
+                .catch(function(resp){
+                    console.log(resp);
+                });
+                        
+            };
+            
+            
         });
 
 

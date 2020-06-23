@@ -7,5 +7,9 @@ if(!empty(isset($_GET))){
         
         echo $usuario->login();
     }
+    else if(isset($_GET['logout'])) {
+        $usuario = new Usuario();
+        $usuario->logout();
+    }
 }
 
