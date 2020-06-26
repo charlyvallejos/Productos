@@ -18,6 +18,13 @@
     </head>
     <body>               
         <?php require 'vistas/menu.php'; ?>
+        <div class="container">
+            <div class="row main">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <?php require 'vistas/'.$vista.'.php'; ?>
+                </div>                
+            </div>            
+        </div>
         
 
     

@@ -1,6 +1,14 @@
 <?php
-
-
+    if(isset($_GET['vista']))
+        $vista = $_GET['vista'];
+    else
+        $vista = 'vistaProductos';
+    
+    function actual($actual,$vista){
+        if($actual == $vista)
+            echo "class='active'";
+    }
+    
 ?>
 
 <div class="nav-color">
@@ -16,11 +24,11 @@
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li>Pedidos</li>
-                        <li>Clientes</li>
+                        <li <?php actual('vistaProductos',$vista); ?> ><a href="?vista=vistaProductos">Productos</a></li>
+                        <li <?php actual('vistaClientes',$vista); ?>><a href="?vista=vistaClientes">Clientes</a></li>
                         <li class="logo"><img src="img/logo_sapo.png"></li>
-                        <li>Productos</li>   
-                        <li>Listados</li>
+                        <li <?php actual('vistaPedidos', $vista); ?>><a href="?vista=vistaPedidos">Pedidos</a></li>   
+                        <li <?php actual('vistaListados', $vista); ?> ><a href="?vista=vistaListados">Listados</<a></li>
                     </ul>
                 </div>
             </div>
