@@ -21,14 +21,14 @@
         </div>
         <?php } ?>
         <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
+            <div class="container-fluid">                                
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li <?php actual('vistaProductos',$vista); ?> ><a href="?vista=vistaProductos">Productos</a></li>
-                        <li <?php actual('vistaClientes',$vista); ?>><a href="?vista=vistaClientes">Clientes</a></li>
+                        <li <?php actual('vistaProductos',$vista); ?> ><a href="?vista=vistaProductos"><span class="dot hidden-xs"></span><span class="text">Productos</span></a></li>
+                        <li <?php actual('vistaClientes',$vista); ?>><a href="?vista=vistaClientes"><span class="dot hidden-xs"></span><span class="text">Clientes</span></a></li>
                         <li class="logo"><img src="img/logo_sapo.png"></li>
-                        <li <?php actual('vistaPedidos', $vista); ?>><a href="?vista=vistaPedidos">Pedidos</a></li>   
-                        <li <?php actual('vistaListados', $vista); ?> ><a href="?vista=vistaListados">Listados</<a></li>
+                        <li <?php actual('vistaPedidos', $vista); ?>><a href="?vista=vistaPedidos"><span class="dot hidden-xs"></span><span class="text">Pedidos</span></a></li>   
+                        <li <?php actual('vistaListados', $vista); ?> ><a href="?vista=vistaListados"><span class="dot hidden-xs"></span><span class="text">Listados</span></a></li>
                     </ul>
                 </div>
             </div>
