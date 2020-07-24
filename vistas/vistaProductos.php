@@ -1,4 +1,10 @@
 <div ng-controller="productosController">
+    <div class="agregar">
+        <img src="img/add.png"/>
+    </div>
+    <div id="controlProducto" class="ocultar formData">
+        <h1>hola</h1>
+    </div>
     <div class="panel" ng-init="consultaProductos()">
         <div class="panel-body">
             <div class="row">
@@ -7,7 +13,7 @@
                 </div>
                 <div class="col-md-3 col-xs-3">
                     <label for="itemsPorPag">Productos por pagina</label>
-                    <select id="itemsPorPag" ng-model="NumxPag">
+                    <select id="itemsPorPag" ng-model="numXpag">
                         <option value="5">5</option>
                         <option value="10">10</option>
                         <option value="15">15</option>

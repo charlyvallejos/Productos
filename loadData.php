@@ -19,7 +19,7 @@ if(!empty(isset($_GET))){
     if(isset($accion) && $accion = 'get'){
         if(isset($tabla) && $tabla = 'prodma'){
             $producto = new Producto();
-            
+            echo json_encode($producto->consultaTodos());
         }
     }
 }

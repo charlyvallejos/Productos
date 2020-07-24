@@ -1,7 +1,15 @@
 var apiURL = 'loadData.php';
+var btnPlus = $('.agregar'),
+    formData = $('.formData');
+    
+btnPlus.on('click',function(e){
+    e.preventDefault;
+    formData.slideToggle();
+});
+
 var app = angular.module('appProductos',['angularUtils.directives.dirPagination','ngMessages','appLogin'])
         .controller('productosController',function($scope,$http,$window){
-            $scope.NumxPag = 5;
+            $scope.numXpag = 5;
             $scope.productos = [];
             
             $scope.sort = function(keyname){
@@ -10,8 +18,8 @@ var app = angular.module('appProductos',['angularUtils.directives.dirPagination'
             };
             
             $scope.consultaProductos = function(){
-                $http(method='GET',
-                      url= apiURL + "?a=get&t=prodma")
+                $http({method:'GET',
+                      url: apiURL + "?a=get&t=prodma"})
                     .then(function(resp){
                         $scope.productos = resp.data;
                     })
