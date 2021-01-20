@@ -3,7 +3,11 @@
         <img src="img/add.png"/>
     </div>
     <div id="controlProducto" class="ocultar formData">
-        <h1>hola</h1>
+        <div class="row">
+            <div class="col-md-8 col-xs-8 col-md-offset-2">
+                <?php include 'vistas/formProductos.php'; ?>
+            </div>
+        </div>
     </div>
     <div class="panel" ng-init="consultaProductos()">
         <div class="panel-body">
